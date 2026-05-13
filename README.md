@@ -34,3 +34,13 @@ Janus, API anahtarlarınızı kod içinde saklamaz. **Fernet (AES-128)** simetri
 ```bash
 git clone [https://github.com/mustafaColak0/Janus-Foot-Printer.git](https://github.com/mustafaColak0/Janus-Foot-Printer.git)
 cd Janus-Foot-Printer
+```
+2. Gerekli Kütüphaneleri Yükleyin:
+   pip install -r requirements.txt
+
+3. Çalıştırma
+   python printer.py
+   
+   ⚠️ Yasal Uyarı (Disclaimer)
+Bu araç sadece eğitim ve yasal siber güvenlik testleri (Pentest) için geliştirilmiştir. Yetkisiz sistemlere karşı kullanımı yasal sorumluluk doğurabilir. Geliştirici, kötüye kullanım durumunda sorumluluk kabul etmez.
+Developed by mustafaColak0
