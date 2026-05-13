@@ -47,4 +47,5 @@ cd Janus-Foot-Printer
    
 ⚠️ Yasal Uyarı (Disclaimer)
 Bu araç sadece eğitim ve yasal siber güvenlik testleri (Pentest) için geliştirilmiştir. Yetkisiz sistemlere karşı kullanımı yasal sorumluluk doğurabilir. Geliştirici, kötüye kullanım durumunda sorumluluk kabul etmez.
+
 Developed by mustafaColak0
