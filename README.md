@@ -36,11 +36,15 @@ git clone [https://github.com/mustafaColak0/Janus-Foot-Printer.git](https://gith
 cd Janus-Foot-Printer
 ```
 2. Gerekli Kütüphaneleri Yükleyin:
+   ```bash
    pip install -r requirements.txt
+   ```
 
-3. Çalıştırma
+4. Çalıştırma
+   ```bash
    python printer.py
+   ```
    
-   ⚠️ Yasal Uyarı (Disclaimer)
+⚠️ Yasal Uyarı (Disclaimer)
 Bu araç sadece eğitim ve yasal siber güvenlik testleri (Pentest) için geliştirilmiştir. Yetkisiz sistemlere karşı kullanımı yasal sorumluluk doğurabilir. Geliştirici, kötüye kullanım durumunda sorumluluk kabul etmez.
 Developed by mustafaColak0
