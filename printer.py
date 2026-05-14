@@ -4,16 +4,16 @@ from dotenv import load_dotenv
 from PIL import Image
 from PIL.ExifTags import TAGS
 from cryptography.fernet import Fernet
-# # SSL_BYPASS: Sertifika uyarılarını kapatır.
+# SSL_BYPASS: Sertifika uyarılarını kapatır.
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# # AI_IMPORT
+# AI_IMPORT
 try:
     from groq import Groq
 except ImportError:
     Groq = None
 
-# # [1. ADIM]: KASA AÇMA FONKSİYONU
+# [1. ADIM]: KASA AÇMA FONKSİYONU
 def sessiz_anahtar_yukle():
     # 1. Anahtarımızı tanımlıyoruz
     KASA_ANAHTARI = b'BURAYA_KENDI_FERNET_ANAHTARINIZI_YAZIN' 
@@ -53,10 +53,10 @@ def sessiz_anahtar_yukle():
         print(f"[!] KASA ACMA HATASI: {e}")
         return False
 
-# # [2. ADIM]: SİSTEMİ TETİKLE
+# [2. ADIM]: SİSTEMİ TETİKLE
 sessiz_anahtar_yukle()
 
-# # [3. ADIM]: ANAHTARLARI ÇEK
+# [3. ADIM]: ANAHTARLARI ÇEK
 GROQ_API_KEY = os.getenv("JANUS")
 
 # --- GLOBAL HAFIZA ---
@@ -91,7 +91,7 @@ def ai_risk_analizi(veri_tipi, bulgular):
     """AI_HEURISTICS: LLM kullanarak toplanan veriden risk raporu üretir."""
     janus_key = os.getenv("JANUS")
     
-    # [FIX] Eğer o an boşsa tekrar .env'den çekmeyi dene
+    #Eğer o an boşsa tekrar .env'den çekmeyi dene
     if not janus_key:
         print("\n\033[1;31m[!] HATA: Kasadan 'JANUS' anahtari okunamadi! Lütfen .enc dosyasini kontrol edin.\033[0m")
         return
@@ -226,7 +226,7 @@ def main():
         elif secim == "3":
             metadata_analiz()
 
-        elif secim == "4":# NET_SCAN: Hedef IP/Domain üzerinde servis keşfi yapar.
+        elif secim == "4": # NET_SCAN: Hedef IP/Domain üzerinde servis keşfi yapar.
             domain = input("\n[?] Hedef Domain/IP (örn: google.com): ").strip()
             print(f"\033[1;34m[*] {domain} üzerinde port taraması başlatılıyor...\033[0m")
             try:
