@@ -1,5 +1,7 @@
 # 🚩 Janus Foot Printer v3.5 🚩
 ### *AI-Powered OSINT, Forensic & Privacy Enforcement Suite*
+<img width="800" height="421" alt="janusFootPrinter-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/4151a88f-c23c-49fd-b47e-413b0d124014" />
+
 
 Janus, dijital ayak izlerini takip etmek, siber riskleri analiz etmek ve gerektiğinde bu izleri "karartmak" için tasarlanmış hibrit bir güvenlik aracıdır. LLM (Llama 3.1) entegrasyonu ile ham veriyi siber güvenlik raporuna dönüştürür.
 
